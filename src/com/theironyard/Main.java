@@ -2,7 +2,9 @@ package com.theironyard;
 
 import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -51,6 +53,24 @@ public class Main {
                         })
                         .collect(Collectors.toCollection(HashSet<Card.Suit>::new));
         return suits.size() == 1;
+    }
+
+    static boolean isStraightFlush(HashSet<Card> hand) {
+        HashSet<Card.Suit> suits =
+                hand.stream()
+                        .map(card -> {
+                            return card.suit;
+                        })
+                        .collect(Collectors.toCollection(HashSet<Card.Suit>::new));
+        HashSet<Card.Rank> ranks =
+                hand.stream()
+                        .map(card -> {
+                            return card.rank;
+                        })
+                        .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
+        ArrayList<Card.Rank> rankList = (ArrayList<Card.Rank>) ranks.stream().sorted();
+
+        return (suits.size() == 1) && (rankList.get(3).ordinal() - rankList.get(0).ordinal() == 3);
     }
 
     public static void main(String[] args) {
