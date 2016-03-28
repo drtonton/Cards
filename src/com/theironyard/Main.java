@@ -91,7 +91,15 @@ public class Main {
         return (suits.size() != 1) && (rankList.get(3).ordinal() - rankList.get(0).ordinal() == 3);
     }
 
-
+    static boolean isFourOfKind(HashSet<Card> hand) {
+        HashSet<Card.Rank> ranks =
+                hand.stream()
+                        .map(card -> {
+                            return card.rank;
+                        })
+                        .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
+        return (ranks.size() == 1);
+    }
 
     public static void main(String[] args) {
         long beginTime = System.currentTimeMillis();
