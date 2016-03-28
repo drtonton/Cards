@@ -74,6 +74,12 @@ public class Main {
     }
 
     static boolean isStraight(HashSet<Card> hand) {
+        HashSet<Card.Suit> suits =
+                hand.stream()
+                        .map(card -> {
+                            return card.suit;
+                        })
+                        .collect(Collectors.toCollection(HashSet<Card.Suit>::new));
         HashSet<Card.Rank> ranks =
                 hand.stream()
                         .map(card -> {
@@ -82,8 +88,10 @@ public class Main {
                         .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
         ArrayList<Card.Rank> rankList = (ArrayList<Card.Rank>) ranks.stream().sorted();
 
-        return (rankList.get(3).ordinal() - rankList.get(0).ordinal() == 3);
+        return (suits.size() != 1) && (rankList.get(3).ordinal() - rankList.get(0).ordinal() == 3);
     }
+
+
 
     public static void main(String[] args) {
         long beginTime = System.currentTimeMillis();
