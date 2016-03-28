@@ -111,6 +111,16 @@ public class Main {
         return (ranks.size() == 3);
     }
 
+    static boolean isTwoOfKind(HashSet<Card> hand) {
+        HashSet<Card.Rank> ranks =
+                hand.stream()
+                        .map(card -> {
+                            return card.rank;
+                        })
+                        .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
+        return (ranks.size() == 2);
+    }
+
     public static void main(String[] args) {
         long beginTime = System.currentTimeMillis();
 
