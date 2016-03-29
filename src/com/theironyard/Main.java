@@ -56,40 +56,28 @@ public class Main {
     }
 
     static boolean isStraightFlush(HashSet<Card> hand) {
-        HashSet<Card.Suit> suits =
-                hand.stream()
-                        .map(card -> {
-                            return card.suit;
-                        })
-                        .collect(Collectors.toCollection(HashSet<Card.Suit>::new));
-        HashSet<Card.Rank> ranks =
-                hand.stream()
-                        .map(card -> {
-                            return card.rank;
-                        })
-                        .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
-        ArrayList<Card.Rank> rankList = (ArrayList<Card.Rank>) ranks.stream().sorted();
-
-        return (suits.size() == 1) && (rankList.get(3).ordinal() - rankList.get(0).ordinal() == 3);
+        return isFlush(hand) && isStraight(hand);
     }
 
     static boolean isStraight(HashSet<Card> hand) {
-        HashSet<Card.Suit> suits =
-                hand.stream()
-                        .map(card -> {
-                            return card.suit;
-                        })
-                        .collect(Collectors.toCollection(HashSet<Card.Suit>::new));
         HashSet<Card.Rank> ranks =
                 hand.stream()
                         .map(card -> {
                             return card.rank;
                         })
                         .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
-        ArrayList<Card.Rank> rankList = (ArrayList<Card.Rank>) ranks.stream().sorted();
+        ArrayList<Card.Rank> rankList =
+                ranks.stream()
+                        .sorted()
+                        .collect(Collectors.toCollection(ArrayList<Card.Rank>::new));
 
-        return (suits.size() != 1) && (rankList.get(3).ordinal() - rankList.get(0).ordinal() == 3);
-    }
+        if ((rankList.get(3).ordinal() - rankList.get(0).ordinal()) == 3) {
+            return true;
+        }
+        else {
+            return false;
+        }
+}
 
     static boolean isFourOfKind(HashSet<Card> hand) {
         HashSet<Card.Rank> ranks =
@@ -102,16 +90,19 @@ public class Main {
     }
 
     static boolean isThreeOfKind(HashSet<Card> hand) {
-        HashSet<Card.Rank> ranks =
+        ArrayList<Integer> rankList =
                 hand.stream()
                         .map(card -> {
-                            return card.rank;
+                            return card.rank.ordinal();
                         })
-                        .collect(Collectors.toCollection(HashSet<Card.Rank>::new));
-        return (ranks.size() == 3);
+                        .sorted()
+                        .collect(Collectors.toCollection(ArrayList<Integer>::new));
+
+       return ((rankList.get(0).equals(rankList.get(1)) && rankList.get(1).equals(rankList.get(2))) ||
+                (rankList.get(1).equals(rankList.get(2)) && rankList.get(2).equals(rankList.get(3))));
     }
 
-    static boolean isTwoOfKind(HashSet<Card> hand) {
+    static boolean isTwoPair(HashSet<Card> hand) {
         HashSet<Card.Rank> ranks =
                 hand.stream()
                         .map(card -> {
@@ -135,3 +126,4 @@ public class Main {
         System.out.printf("Elapsed time: %d msecs\n", endTime - beginTime);
     }
 }
+

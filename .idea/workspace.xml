@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="190c46d4-9b12-4bde-834b-2b44350376db" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Tests/com/theironyard/MainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cards.iml" afterPath="$PROJECT_DIR$/Cards.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tests/com/theironyard/MainTest.java" afterPath="$PROJECT_DIR$/src/Tests/com/theironyard/MainTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/theironyard/Main.java" afterPath="$PROJECT_DIR$/src/com/theironyard/Main.java" />
     </list>
     <ignored path="Cards.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +28,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/theironyard/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.8961039">
-              <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.14718615">
+              <caret line="98" column="74" selection-start-line="98" selection-start-column="74" selection-end-line="98" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/Tests/com/theironyard/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -83,10 +79,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/theironyard/Card.java" />
-        <option value="$PROJECT_DIR$/src/com/theironyard/Main.java" />
         <option value="$PROJECT_DIR$/src/com/theironyard/Tests/MainTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/com/theironyard/MainTestTest.java" />
         <option value="$PROJECT_DIR$/src/Tests/com/theironyard/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/com/theironyard/Main.java" />
       </list>
     </option>
   </component>
@@ -210,22 +206,109 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testIsFlush">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.theironyard.Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+  <component name="RunManager" selected="JUnit.MainTest.testIsThreeOfKind">
+    <configuration default="false" name="MainTest.testIsStraightFlush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.theironyard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Cards" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.theironyard" />
+      <option name="MAIN_CLASS_NAME" value="com.theironyard.MainTest" />
+      <option name="METHOD_NAME" value="testIsStraightFlush" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Cards" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainTest.testIsFourOfKind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.theironyard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Cards" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.theironyard" />
+      <option name="MAIN_CLASS_NAME" value="com.theironyard.MainTest" />
+      <option name="METHOD_NAME" value="testIsFourOfKind" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainTest.testIsThreeOfKind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.theironyard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Cards" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.theironyard" />
+      <option name="MAIN_CLASS_NAME" value="com.theironyard.MainTest" />
+      <option name="METHOD_NAME" value="testIsThreeOfKind" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainTest.testIsStraight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.theironyard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Cards" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.theironyard" />
+      <option name="MAIN_CLASS_NAME" value="com.theironyard.MainTest" />
+      <option name="METHOD_NAME" value="testIsStraight" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="MainTest.testIsFlush" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -488,13 +571,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.testIsFlush" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MainTest.testIsStraightFlush" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.testIsFourOfKind" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.testIsThreeOfKind" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.testIsStraight" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.testIsFlush" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MainTest.testIsFlush" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MainTest.testIsThreeOfKind" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.testIsStraightFlush" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.testIsFlush" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.testIsStraight" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.testIsFourOfKind" />
       </list>
     </recent_temporary>
   </component>
@@ -509,8 +599,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_testIsFlush - 2016.03.28 at 16h 39m 14s.xml">
+    <history-entry file="MainTest_testIsFlush - 2016.03.29 at 08h 52m 51s.xml">
       <configuration name="MainTest.testIsFlush" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraight - 2016.03.29 at 08h 30m 02s.xml">
+      <configuration name="MainTest.testIsStraight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraight - 2016.03.29 at 08h 32m 45s.xml">
+      <configuration name="MainTest.testIsStraight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraight - 2016.03.29 at 08h 35m 29s.xml">
+      <configuration name="MainTest.testIsStraight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraight - 2016.03.29 at 08h 39m 53s.xml">
+      <configuration name="MainTest.testIsStraight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraight - 2016.03.29 at 08h 47m 04s.xml">
+      <configuration name="MainTest.testIsStraight" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraightFlush - 2016.03.29 at 08h 51m 43s.xml">
+      <configuration name="MainTest.testIsStraightFlush" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsStraightFlush - 2016.03.29 at 08h 55m 14s.xml">
+      <configuration name="MainTest.testIsStraightFlush" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsThreeOfKind - 2016.03.29 at 09h 11m 52s.xml">
+      <configuration name="MainTest.testIsThreeOfKind" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_testIsThreeOfKind - 2016.03.29 at 09h 21m 19s.xml">
+      <configuration name="MainTest.testIsThreeOfKind" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -519,7 +636,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -545,7 +662,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="11" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -569,6 +688,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="21" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theironyard/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -580,15 +707,15 @@
     <entry file="file://$PROJECT_DIR$/src/Tests/com/theironyard/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/theironyard/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.8961039">
-          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.14718615">
+          <caret line="98" column="74" selection-start-line="98" selection-start-column="74" selection-end-line="98" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
